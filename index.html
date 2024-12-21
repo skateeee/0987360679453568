@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MP3 Chapter Selector</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Stardust audio player</h1>
+      <audio id="audioPlayer" controls>
+        <source
+          src="https://cdn.glitch.global/c694d0c4-7cb9-4c2e-b903-907b9ffc6a29/31e20b38-afe0-46cd-9f91-97f11aa86af3.mp3?v=1734801731206"
+          type="audio/mp3"
+        />
+      </audio>
+      <div class="chapter-controls">
+        <label for="chapterTime">Time (seconds):</label>
+        <input type="number" id="chapterTime" min="0" placeholder="e.g., 10" />
+        <label for="chapterName">Name:</label>
+        <input type="text" id="chapterName" placeholder="e.g., Intro" />
+        <button id="addChapter">Add Chapter</button>
+      </div>
+      <div>
+        <label for="gracePeriod">Grace Period (seconds):</label>
+        <input type="number" id="gracePeriod" value="0" min="0" />
+      </div>
+      <h2>Custom Chapters</h2>
+      <ul id="customChapterList"></ul>
+      <h2>Default Chapters</h2>
+      <ul id="defaultChapterList"></ul>
+      <p>
+        Made by Ben
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
