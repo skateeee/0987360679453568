@@ -1,0 +1,148 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+}
+
+/* Container Styling */
+.container {
+    max-width: 700px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Audio Player */
+audio {
+    width: 100%;
+    border: 2px solid #007bff;
+    border-radius: 12px;
+    background: #f9f9f9;
+    padding: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Chapter Controls */
+.chapter-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Input Fields */
+.chapter-controls input,
+#gracePeriod {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #f4f4f9;
+    transition: border-color 0.3s ease;
+}
+
+.chapter-controls input:focus,
+#gracePeriod:focus {
+    border-color: #007bff;
+    outline: none;
+    background: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Buttons */
+.chapter-controls button {
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.chapter-controls button:hover {
+    background: linear-gradient(45deg, #0056b3, #003f87);
+    transform: translateY(-2px);
+}
+
+.chapter-controls button:active {
+    transform: translateY(1px);
+}
+
+/* Grace Period */
+#gracePeriod {
+    padding: 10px;
+    margin-top: 15px;
+    width: calc(100% - 10px);
+    font-size: 1rem;
+}
+
+/* Chapter Lists */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    padding: 12px 20px;
+    background: #f0f0f5;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+ul li:hover {
+    background: #e0e0ee;
+    transform: translateX(5px);
+}
+
+/* Chapter Time and Name */
+.chapter-time {
+    font-weight: bold;
+    color: #007bff;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.chapter-name {
+    color: #555555;
+    font-size: 1rem;
+    font-style: italic;
+}
